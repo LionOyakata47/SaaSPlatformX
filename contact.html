@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | SaaS Platform X</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="contact-page">
+  <div class="contact-bg" aria-hidden="true">
+    <img class="contact-photo" src="assets/images/contact-bg.png" alt="">
+    <div class="contact-gradient"></div>
+    <img class="contact-waves" src="assets/images/contact-grid.svg" alt="">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+  </div>
+
+  <a class="contact-brand" href="index.html">SaaS Platform X</a>
+
+  <main class="contact-main">
+    <header class="contact-heading">
+      <h1>お問い合わせ</h1>
+      <p>SaaS Platform Xに関するご質問やご相談は、お気軽にお問い合わせください。</p>
+    </header>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="field-row">
+        <div class="field">
+          <label for="last-name">姓 <span class="req" aria-hidden="true">*</span></label>
+          <input id="last-name" name="lastName" type="text" placeholder="山田" autocomplete="family-name" required>
+          <p class="field-error" id="last-name-error" hidden></p>
+        </div>
+        <div class="field">
+          <label for="first-name">名 <span class="req" aria-hidden="true">*</span></label>
+          <input id="first-name" name="firstName" type="text" placeholder="太郎" autocomplete="given-name" required>
+          <p class="field-error" id="first-name-error" hidden></p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="company">会社名 <span class="req" aria-hidden="true">*</span></label>
+        <input id="company" name="company" type="text" placeholder="株式会社サンプル" autocomplete="organization" required>
+        <p class="field-error" id="company-error" hidden></p>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="email">メールアドレス <span class="req" aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" placeholder="example@company.com" autocomplete="email" required>
+          <p class="field-error" id="email-error" hidden></p>
+        </div>
+        <div class="field">
+          <label for="phone">電話番号 <span class="optional">(任意)</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="03-1234-5678" autocomplete="tel">
+          <p class="field-error" id="phone-error" hidden></p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="message">お問い合わせ内容 <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+        <p class="field-error" id="message-error" hidden></p>
+      </div>
+
+      <div class="form-submit">
+        <button class="btn btn-primary btn-send" type="submit">送信する</button>
+      </div>
+    </form>
+
+    <div class="form-success" id="form-success" tabindex="-1" hidden>
+      <h2>送信しました</h2>
+      <p>お問い合わせありがとうございます。内容を確認のうえ、担当者よりご連絡します。</p>
+      <a class="btn btn-outline btn-outline-blue" href="index.html">トップへ戻る</a>
+    </div>
+
+    <aside class="contact-channels">
+      <div>
+        <h2>お電話でのお問い合わせ</h2>
+        <p>平日 9:00〜18:00</p>
+        <p class="contact-value"><a href="tel:0312345678">03-1234-5678</a></p>
+      </div>
+      <div>
+        <h2>メールでのお問い合わせ</h2>
+        <p>24時間受付</p>
+        <p class="contact-value"><a href="mailto:contact@saasplatform-x.com">contact@saasplatform-x.com</a></p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
